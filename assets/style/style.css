@@ -1,0 +1,24 @@
+
+.imgp{
+    width: 300px;
+    cursor: pointer;
+}
+.main-div-btn-wsp{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+
+}
+.main-div-iamgen-wsp{
+    width: 50px;
+    height: 50px;
+}
+.bg-green{
+ background-color:#b4bc1c ;
+}
+.img-logo{
+    width: 100px;
+}
