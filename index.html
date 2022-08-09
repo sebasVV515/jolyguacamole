@@ -6,147 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>JollyGuacamoly</title>
 </head>
 <body>
     <header>
-        <section>
-            <nav class="navbar navbar-expand bg-light">
+            <nav class="navbar navbar-expand bg-green">
                 <div class="container-fluid">
-                    <img src="./assets/img/image.png" class="img-fluid img-logo" alt="">
+                    <img src="./assets/img/LogoSinfondo.png" class="img-fluid img-logo" alt="">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Inicio</a>
+                    <div class="collapse navbar-collapse container" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item mx-2 active btn-brown-active">
+                                <a class="nav-link active text-light p-3" href="#">Inicio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Productos</a>
+                            <li class="nav-item mx-2 btn-brown">
+                                <a class="nav-link text-light p-3" href="./src/views/productos.html">Productos</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./src/views/quienes.html">¿Quienes Somos?</a>
+                            <li class="nav-item mx-2 btn-brown">
+                                <a class="nav-link text-light p-3" href="./src/views/quienes.html">¿Quienes Somos?</a>
                             </li>
+                            <li class="nav-item mx-2 btn-brown">
+                                <a class="nav-link text-light p-3" href="./src/views/recetas.html">Recetas</a>
+                            </li>
+                        
+                            
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </section>
-        <section>
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    pan class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
+            </nav>     
     </header>
     <main>
-        <section>
-            <div class="container ">
-                <div class="row">
-                    <div class="col bg-green">
-                        <h2>Productos</h2>
-                    </div>
+        <section class="carrusel">
+            <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="assets/img/carrusel1.png" class="d-block imgbanner" alt="Aguacates">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/img/carrusel2.png" class="d-block imgbanner " alt="Guacamole">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/img/carrusel3.png" class="d-block imgbanner " alt="Garbanzos">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/img/carrusel4.png" class="d-block imgbanner " alt="Hummus">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
-        <section>
-            <div class="container shadow my-3">
-                <div class="row row-cols-12 row-cols-md-12">
-                    <div class="col col-12 col-md-12 shadow my-3 p-3 w-100">
-                       <div class="row row-cols-12 row-cols-md-12 ">
-                        <div class="col col-12 col-md-5">
-                           <img src="./assets/img/jolynormal.jpg" alt="" id="img" class="img-fluid  imgp">
+        <section class="my-3">
+            <section>
+                <div class="container ">
+                    <div class="row">
+                        <div class="col bg-green">
+                            <h2>Productos</h2>
                         </div>
-                        <div class="col col-12 col-md-5">
-                             <h2 class="titulo invisible" id="titulo">Guacamole</h2>
-                             <p id="texto" class="invisible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iste numquam dolorum temporibus nam eveniet autem. Unde praesentium debitis corrupti. Suscipit obcaecati repudiandae tempore modi earum voluptates rem nemo consequatur, veritatis blanditiis pariatur sed autem omnis aperiam aspernatur? Iste, inventore corporis illum unde fugit atque doloremque vitae iure labore fuga!</p>
-                             <h3 id="precio1" class="invisible">9000 500g</h3>
-                             <h3 id="precio2" class="invisible">15200 800g</h3>
-                        </div>
-                       </div>
                     </div>
-                    <div class="col col-12 col-md-12 shadow my-3 p-3 w-100">
-                        <div class="row row-cols-12 row-cols-md-12 ">
-                         <div class="col col-12 col-md-5">
-                            <img src="./assets/img/jolypicante.webp" alt="" id="img1" class="img-fluid  imgp">
-                         </div>
-                         <div class="col col-12 col-md-5">
-                              <h2 class="titulo1 invisible" id="titulo1">Guacamole Picante</h2>
-                              <p id="texto1" class="invisible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iste numquam dolorum temporibus nam eveniet autem. Unde praesentium debitis corrupti. Suscipit obcaecati repudiandae tempore modi earum voluptates rem nemo consequatur, veritatis blanditiis pariatur sed autem omnis aperiam aspernatur? Iste, inventore corporis illum unde fugit atque doloremque vitae iure labore fuga!</p>
-                              <h3 id="precio3" class="invisible">9000 500g</h3>
-                              <h3 id="precio4" class="invisible">15200 800g</h3>
-                         </div>
-                        </div>
-                     </div>
-                     <div class="col col-12 col-md-12 shadow my-3 p-3 w-100">
-                        <div class="row row-cols-12 row-cols-md-12  ">
-                         <div class="col col-12 col-md-5 ">
-                            <img src="./assets/img/hummusnormal.webp" alt="" id="img2" class="img-fluid  imgp">
-                         </div>
-                         <div class="col col-12 col-md-5">
-                              <h2 class="titulo2 invisible" id="titulo2">Hummus</h2>
-                              <p id="texto2" class="invisible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iste numquam dolorum temporibus nam eveniet autem. Unde praesentium debitis corrupti. Suscipit obcaecati repudiandae tempore modi earum voluptates rem nemo consequatur, veritatis blanditiis pariatur sed autem omnis aperiam aspernatur? Iste, inventore corporis illum unde fugit atque doloremque vitae iure labore fuga!</p>
-                              <h3 id="precio5" class="invisible">8000 500g</h3>
-                              <h3 id="precio6" class="invisible">1400 800g</h3>
-                         </div>
-                        </div>
-                     </div>
-                     <div class="col col-12 col-md-12 shadow my-3 p-3 w-100">
-                        <div class="row row-cols-12 row-cols-md-12 ">
-                         <div class="col col-12 col-md-5">
-                            <img src="./assets/img/hummuspicante.webp" alt="" id="img3" class="img-fluid  imgp">
-                         </div>
-                         <div class="col col-12 col-md-5">
-                              <h2 class="titulo3 invisible" id="titulo3">Hummus Picante</h2>
-                              <p id="texto3" class="invisible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iste numquam dolorum temporibus nam eveniet autem. Unde praesentium debitis corrupti. Suscipit obcaecati repudiandae tempore modi earum voluptates rem nemo consequatur, veritatis blanditiis pariatur sed autem omnis aperiam aspernatur? Iste, inventore corporis illum unde fugit atque doloremque vitae iure labore fuga!</p>
-                              <h3 id="precio7" class="invisible">8000 500g</h3>
-                              <h3 id="precio8" class="invisible">14000 800g</h3>
-                         </div>
-                        </div>
-                     </div>
-
+                </div>
+            </section>
+            <section>
+                <div class="container shadow my-3">
+            <div class="row row-cols-12 row-cols-md-2 p-4">
+                <div class="col col-12 shadow col-md-6 my-3">
+                    <h3 class="fw-bold  text-center">Guacamole normal</h3>
+                    <img src="./assets/img/jolynormal.jpg" class="img-fluid imgp mx-auto m-xxl-auto d-block" alt="">
+                </div>
+                <div class="col col-12 shadow col-md-6 my-3">
+                    <h3 class="fw-bold  text-center">Guacamole normal</h3>
+                    <img src="./assets/img/jolypicante.webp" class="img-fluid imgp mx-auto m-xxl-auto d-block" alt="">
+                </div>
+                <div class="col col-12 shadow col-md-6 my-3">
+                    <h3 class="fw-bold  text-center">Guacamole normal</h3>
+                    <img src="./assets/img/hummusnormal.webp" class="img-fluid imgp mx-auto m-xxl-auto d-block" alt="">
+                </div>
+                <div class="col col-12 shadow col-md-6 my-3">
+                    <h3 class="fw-bold  text-center">Guacamole normal</h3>
+                    <img src="./assets/img/hummuspicante.webp" class="img-fluid imgp mx-auto m-xxl-auto d-block" alt="">
                 </div>
             </div>
+                </div>
+            </section>
         </section>
+       
         <section>
             <div>
-                <a href="https://api.whatsapp.com/send?phone=3243513952" class="main-div-btn-wsp " target="_blank">
-                    <img src="./assets/img/icono.png" class="main-div-iamgen-wsp" alt="">
+                <a href="https://api.whatsapp.com/send?phone=3243513952&text=Hola%20quiero%20contactar%20con%20un%20asesor." class="main-div-btn-wsp " target="_blank">
+                    <img src="../../assets/img/icono.png" class="main-div-iamgen-wsp" alt="">
                     </a>
                     <i class="icon-whatsapp"></i>
             </div>
