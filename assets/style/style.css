@@ -1,8 +1,15 @@
+
 *{
     text-align: justify;
 }
 h2{
     text-align: center;
+}
+.estrella{
+    width: 30px;
+}
+.bg-aguacate{
+    background: url('../img/fondo.svg');
 }
 .imgp{
     width: 300px;
@@ -56,6 +63,26 @@ h2{
 .btn-brown:hover{
     background: rgb(71, 44, 9,0.7);
 }
+.btn-brown-productos{
+    border-radius: 15px;
+    text-align: center;
+    border: 1px;
+    background: rgb(71, 44, 9);
+    z-index: 1;
+}
+.btn-brown-productos:hover{
+    background: rgb(71, 44, 9,0.7);
+}
+.btn-brown-login{
+  
+    border-radius: 15px;
+    border: 1px;
+    background: rgb(71, 44, 9);
+    z-index: 1;
+}
+.btn-brown-login:hover{
+    background: rgb(71, 44, 9,0.7);
+}
 li a{
     display: block;
     width: 170px;
@@ -72,4 +99,68 @@ li a{
 }
 .btitulo h2{
     line-height: 80px;
+}
+
+.titulofactura{
+    background-color: #b4bc1c;
+}
+.alturatitulofactura{
+    font-size: 70px;
+}
+.bg-blanco{
+    background-color: white;
+    min-height: 350px;
+    max-height: 350px;
+}
+.colorbotonfactura{
+    background-color: #7d3d17;
+    color: white;
+    width: 20%;
+    padding: 0px 15px 0px 15px ;
+   
+}
+
+
+.porcentajefactura{
+    width: 30%;
+}
+.imagenfactura{
+    z-index: initial;
+width: 150px;
+height: 150px;
+cursor: pointer;
+}
+
+
+.sectionStock{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.stockBoton {
+    width: 20%;
+}
+.stockCampos {
+    background-color: #7d3d17;
+    color: white;
+    text-align: center;
+    width: 50%;
+    border-radius: 10%;
+    padding: 0px 15px 0px 15px ;
+}
+
+.stockInput{
+
+    width: 80%;
+}
+
+.stockBoton {
+    display: flex ;
+    justify-content: center;
+}
+.linkli{
+    text-decoration: none;
 }
